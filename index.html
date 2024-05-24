@@ -10,6 +10,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.iframe-container {
+			  width: 600;
+			  height: 400;
+			  overflow: hidden;
+			  position: relative;
+			}
+			.iframe-container iframe {
+			  width: 600px; /* Adjust this based on your scaling needs */
+			  height: 400px; /* Adjust this based on your scaling needs */
+			  border: none;
+			  transform: scale(1); /* Adjust scale to fit your image */
+			  transform-origin: top left;
+			}
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -106,7 +121,8 @@
 									<h4>Vision Engineer</h4>
 									<blockquote>▪ Prototyped, commissioned and rigorously evaluated advanced machine vision inspection systems, leveraging diverse lighting and optic techniques to optimize detection accuracy in industrial quality control for 8 companies.
 										<br>▪ Refined and translated a C++ pipeline to Python for robotic laser detection, leveraging OpenCV and Object detection models like YOLOV8 to achieve precise center-finding, significantly enhancing the accuracy of robotic placements in subsequent operations.
-										</blockquote>			
+										</blockquote>
+
 									<h4>Robotics Engineering Coop</h4>
 									<blockquote>▪ Created web interface using React framework integrated with ROS to monitor the robots.
 										<br>▪ Developed computer vision pipeline for object detection and pose estimation of the robot.
@@ -173,6 +189,31 @@
 									</ul>
 								</footer>
 							</article>
+
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2 id="Deeplearning"><a href="single.html">Lidar-Camera Sensor Fusion</a></h2>
+										<p>Open3d | YoloV4 | PyTorch | OpenCV | Numpy</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">Jan 2023 - May 2023</time>
+										<a href="https://github.com/Chinmayak1197/Visual-Sensor-Fusion" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
+									</div>
+								</header>
+								<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
+								<iframe width="600" height="300"
+								src="/home/chinmay/Downloads/visual_fusion.gif">
+								</iframe>
+								<p>▪ Calibrated camera using checkerboard pattern by mapping 3D world coordinates to image coordinates and then estimated parameters of camera through the processes of calculating intrinsic and extrinsic parameters.
+									<br>▪ Implemented low-level (Point-Pixel) fusion and mid-level (Box to Box) fusion of LiDAR 3D points with 2D image detections using pretrained YOLOv4 network.
+								</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="https://github.com/Chinmayak1197/Multi-Task-Self-Supervised-Learning" ></a></li>
+									</ul>
+								</footer>
+							</article>
 						
 							
 						<!-- Post2 -->
@@ -188,8 +229,8 @@
 								</div>
 							</header>
 							
-							<iframe width="600" height="400"
-							src="images/Screenshot from 2023-03-10 14-49-36.png">
+							<iframe width="700" height="500"
+							src="images/Screenshot from 2023-03-10 14-49-36.png" scrolling="yes" transform ="scale(0.75)" transform-origin="top left">
 							</iframe>
 							<p>▪ Built a Time-series regression model with regularization techniques to predict crime rate for succeeding years.
 								<br>▪ Implemented multiple classification (SVM, KNN, Decision Tree, SoftMax) and regression models for homicide
@@ -270,7 +311,7 @@
 								</div>
 							</header>
 							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="250"
+							<iframe width="600" height="500"
 							src="images/Screenshot from 2022-07-28 23-14-55.png">
 							</iframe>
 							<p>▪ Found feasible paths and compared distance metrics using discrete and sampling-based algorithms such as BFS,
@@ -320,10 +361,12 @@
 									<!-- <a href="https://github.com/amithachari/EmergencyBrakingSimulation" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a> -->
 								</div>
 							</header>
+								<div class="iframe-container">
 							<!-- <a href="#" class="image featured"><img src="/home/chinmay/Desktop/Portfolio/images/Screenshot from 2022-07-28 23-14-55.png" alt="" /></a> -->
-							<iframe width="600" height="280"
-							src="images/Screenshot from 2023-03-10 14-32-04.png">
+							<iframe 
+							src="images/Screenshot from 2023-03-10 14-32-04.png" frameborder="0" >
 							</iframe>
+							</div>
 							<p>▪ Design using Solidworks and build a 3-DOF system with 2 cameras to track a tube inserted into a human body.<br>
 								▪ Control the motors using Arduino to position the camera along with the movement of the tube.
 							<footer>
@@ -347,7 +390,7 @@
 							</header>
 							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
 							<iframe width="600" height="400"
-							src="images/Screenshot from 2023-03-10 14-32-39.png">
+							src="images/Screenshot from 2023-03-10 14-32-39.png" scrolling ="no" frameborder="0">
 							</iframe>
 							<p>▪ Worked in the chassis subsystem on Hybrid-electric and combustion prototype. Promoted to chassis module head
 								and led team of 5 people.<br>
