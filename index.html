@@ -295,8 +295,8 @@
 
         /* Projects */
         .project-item {
-            margin-bottom: 3rem;
-            padding: 2rem;
+            margin-bottom: 2.5rem;
+            padding: 1.75rem;
             background: linear-gradient(135deg, #EBF8FF 0%, #FFFFFF 100%);
             border-radius: 8px;
             border-left: 4px solid #4299E1;
@@ -305,7 +305,7 @@
 
         .project-item:hover {
             border-left-width: 6px;
-            padding-left: 2.5rem;
+            padding-left: 2.25rem;
         }
 
         .project-item:last-child {
@@ -366,11 +366,12 @@
         /* Images */
         .project-image {
             width: 100%;
-            max-width: 100%;
+            max-width: 600px;
             height: auto;
             border-radius: 8px;
             margin: 1rem 0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: block;
         }
 
         /* Education */
@@ -516,7 +517,7 @@
             <h1>Chinmaya Khamesra</h1>
             <p class="tagline">Robotics Engineer | Computer Vision | Machine Learning</p>
             <div class="contact-info">
-                <a href="mailto:ckhamesra@wpi.edu">ckhamesra@wpi.edu</a>
+                <a href="/cdn-cgi/l/email-protection#afccc4c7cec2cadcddceefd8dfc681cacbda"><span class="__cf_email__" data-cfemail="492a222128242c3a3b28093e3920672c2d3c">[email&#160;protected]</span></a>
                 <span style="opacity: 0.5;">|</span>
                 <a href="tel:+17744189213">(774) 418-9213</a>
                 <span style="opacity: 0.5;">|</span>
@@ -803,11 +804,11 @@
         <p style="margin-top: 1rem;">
             <a href="https://www.linkedin.com/in/ckhamesra1197/" target="_blank">LinkedIn</a>
             <a href="https://github.com/Chinmayak1197" target="_blank">GitHub</a>
-            <a href="mailto:ckhamesra@wpi.edu">Email</a>
+            <a href="/cdn-cgi/l/email-protection#75161e1d1418100607143502051c5b101100">Email</a>
         </p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -838,13 +839,4 @@
                 }
             });
 
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+  
